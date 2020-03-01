@@ -23,3 +23,26 @@ def test_subtract_two_numners():
 
     assert res == 1
 
+def test_multiply_two_numbers():
+    c = Calc()
+
+    res = c.multiply(2, 2)
+
+    assert res == 4
+
+def test_multiply_many_numbers():
+    c = Calc()
+
+    s = range(1, 10)
+
+    res = c.multiply(*s)
+
+    assert res == 362880
+
+def test_divide_two_numbers():
+    c = Calc()
+
+    res = c.divide(4, 2)
+
+    assert res == 2
+
