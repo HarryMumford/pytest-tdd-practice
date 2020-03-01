@@ -1,3 +1,3 @@
 class Calc:
-    def add(self, a, b, c):
-        return 9
+    def add(self, *s):
+        return sum(s)

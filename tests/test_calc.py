@@ -7,9 +7,12 @@ def test_add_two_numbers():
 
     assert res == 9
 
-# def test_add_three_numners():
-#     c = Calc()
+def test_add_many_numners():
+    c = Calc()
 
-#     res = c.add(1, 2, 3)
+    s = range(100)
 
-#     assert res == 6
+    res = c.add(*s)
+
+    assert res == 4950
+
