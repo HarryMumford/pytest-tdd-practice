@@ -16,3 +16,10 @@ def test_add_many_numners():
 
     assert res == 4950
 
+def test_subtract_two_numners():
+    c = Calc()
+
+    res = c.subtract(2, 1)
+
+    assert res == 1
+
